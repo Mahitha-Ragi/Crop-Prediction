@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>House price prediction</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style1.css')}}">
+</head>
+<body background="{{ url_for('static', filename='crop.jpg')}}" style="background-repeat:no-repeat; background-size:100%100% ; opacity: 0.5px; ><font size="10"><center>
+<form class="box" method="post">
+    <h1>Crop Prediction</h1>
+    <table>
+        <section>
+
+<tr>
+    <td>Enter District :</td> 
+    <td>
+        <input type="text" placeholder="District" name="dist">
+    </td>
+</tr>
+
+ <tr>
+     <td>Crop year : </td>
+     <td><input type="text" placeholder="year" name="crpyr"></td>
+</tr>
+<tr>
+    <td>Season:</td>
+    <td>
+        <select name="season">
+            <option value="Kharif">Kharif</option>
+            <option value="Rabi">Rabi</option>
+            <option value="Whole Year">Whole Year</option>
+            <option value="Summer">Summer</option>
+            <option value="Winter">Winter</option>
+            <option value="Autumn">Autumn</option>
+        </select>
+    </td>
+</tr>
+<tr>
+        <td>Area:</td>
+        <td><input type="text" name="area"></td>
+</tr>
+<tr>
+        <td>Crop:</td>
+        <td><input type="text" name="crop"></td>
+</tr>
+
+            </section>
+
+
+</table>
+<br>
+{{result}}
+<br>
+<table>
+    <tr><input type="submit" value="Submit" ></tr>
+</table>
+</form</font></center>
+</body>
+</html>
